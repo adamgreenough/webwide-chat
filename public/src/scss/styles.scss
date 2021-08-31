@@ -1,5 +1,6 @@
 :root {
     font-size: 18px;
+    text-rendering: optimizeLegibility;
 
     @media(max-width: 1300px) {
         font-size: 17px;
