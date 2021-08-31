@@ -268,7 +268,8 @@ body.home section#hero .hero-content main {
 }
 
 body.home section#hero .hero-content h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
+  max-width: 35rem;
   line-height: 1;
   font-family: 'DM Serif Display', sans-serif;
   font-weight: 500;
