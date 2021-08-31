@@ -1,1 +1,128 @@
-test
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Webwide | Web Designer & Developer Community</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="hero">
+        <div class="hero-content">
+            <a class="logo" href="/">
+                <svg width="100%" height="100%" viewBox="0 0 205 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                    <g transform="matrix(1,0,0,1,-46.561,-188.439)">
+                        <g transform="matrix(1,0,0,1,322,74)">
+                            <g transform="matrix(1.46341,0,0,1.46341,-653.463,-130.087)">
+                                <g>
+                                    <g transform="matrix(0.683333,0,0,0.683333,225.817,38.3261)">
+                                        <path d="M139.435,285.024L54.498,285.024C50.669,285.024 47.561,281.916 47.561,278.088L47.561,195.376C47.561,191.547 50.669,188.439 54.498,188.439L245.502,188.439C249.331,188.439 252.439,191.547 252.439,195.376L252.439,278.088C252.439,281.916 249.331,285.024 245.502,285.024L160.565,285.024C160.508,285.093 160.448,285.159 160.384,285.222L152.033,293.573C150.911,294.696 149.089,294.696 147.967,293.573L139.616,285.222C139.552,285.159 139.492,285.093 139.435,285.024ZM158.204,214.748L158.242,214.645L141.327,214.645L133.687,242.233L133.251,242.233L124.193,214.645L110.879,214.645L101.821,242.146L101.384,242.146L93.745,214.645L76.829,214.645L93.308,259.345L107.823,259.345L117.317,234.376L117.754,234.376L127.248,259.345L141.763,259.345L149.789,237.575L157.852,259.449L172.367,259.449L181.861,234.479L182.298,234.479L191.792,259.449L206.307,259.449L222.786,214.748L205.871,214.748L198.231,242.337L197.795,242.337L188.737,214.748L175.423,214.748L166.365,242.249L165.928,242.249L158.289,214.748L158.204,214.748Z" style="fill:white;"/>
+                                    </g>
+                                    <g transform="matrix(52.5,0,0,42,321.527,215.616)">
+                                        <path d="M0.232,0L0.42,0L0.544,-0.406L0.55,-0.406L0.673,0L0.862,0L1.077,-0.727L0.857,-0.727L0.757,-0.278L0.751,-0.278L0.634,-0.727L0.46,-0.727L0.342,-0.28L0.337,-0.28L0.237,-0.727L0.127,-0.356L0.232,0Z" style="fill:white;fill-opacity:0.2;fill-rule:nonzero;"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+
+            <main>
+                <h1>Making friends while making the web. ✨</h1>
+                <p class="lead">Webwide is an inclusive, supportive community of professional and hobbyist web designers & developers.</p>
+                <p>Whether you're in training, a seasoned pro or anything in between – join us in a variety of friendly chit-chat, knowledge-sharing and activities.</p>
+                <nav>
+                    <a href="https://ko-fi.com/webwide/tiers" target="_blank">Join now for $3/m</a>
+                    <a href="/guide/">Community Guide</a>
+                </nav>
+                <details>
+                    <summary>Membership info & free memberships</summary>
+                    <div>
+                        <p>A small monthly membership fee means the larger the community gets, the more resources there is to invest in moderation and keeping Webwide a safe, self-funded, democratic community. It also helps to cover platform fees and fund tree plantings.</p>
+                        <p>Subscriptions are powered by Ko-Fi and can be <strong>easily cancelled</strong> from their account area at any time – no hard feelings! During checkout, you'll be invited to the Webwide Discord server where you can join with an existing account or easily create a new one.</p>
+                        <p><strong>If you can't pay for any reason</strong> – be it affordability, geo-restrictions, or anything else – please email me a quick intro at <a href="mailto:webwide@addy.codes">webwide@addy.codes</a> for a free membership (no explanation required!).</p>
+                        <p>Webwide has a strict <a href="/rules/#coc">code of conduct</a> and we reserve the right to suspend your access at any time with no refund if you are deemed to be in breach. We may use your active subscription email to contact you about important service updates. Your usage is also governed by the <a href="https://discord.com/privacy">Discord</a> and <a href="https://more.ko-fi.com/privacy">Ko-Fi</a> privacy policies.</p>
+                    </div>
+                </details>
+            </main>
+
+            <div id="channel-scroller">
+                <h2><span>Channel Guide</span> <span><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Discord</title><path fill="#5865F2" d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg> Powered by Discord</span></h2>
+                <div id="channel-scroller-wrap">
+                    <ul id="channel-scroller-track">
+                        <li>#👋-introduce-yourself</li>
+                        <li>#🏆-community-challenges</li>
+                        <li>#🌲-plant-a-tree</li>
+                        <li>#💬-lounge</li>
+                        <li>#🗞-technology-news</li>
+                        <li>#🧠-mental-health</li>
+                        <li>#🥘-cooking-and-crafting</li>
+                        <li>#🕹-video-games</li>
+                        <li>#🐱-pets</li>
+                        <li>#📝-blog-posts</li>
+                        <li>#⭐-show-and-tell</li>
+                        <li>#🖌-design</li>
+                        <li>#🎨-creative-coding</li>
+                        <li>#✨-user-experience</li>
+                        <li>#🔥-design-critiques</li>
+                        <li>#📄-html</li>
+                        <li>#🌈-css</li>
+                        <li>#🟨-javascript</li>
+                        <li>#🛠-js-frameworks</li>
+                        <li>#🚹-accessibility</li>
+                       <li>#🖥-front-end-other</li>
+                       <li>#🐘-php</li>
+                       <li>#🐍-python</li>
+                       <li>#🟢-node</li>
+                        <li>#🖋-wordpress</li>
+                        <li>#📦-other-cms</li>
+                        <li>#🗃-databases</li>
+                       <li>#🛠-back-end-other</li>
+                        <li>#🌐-hosting-domains</li>
+                        <li>#📈-digital-marketing</li>
+                        <li>#💿-software</li>
+                        <li>#💻-hardware</li>
+                        <li>#🙏-buddy-up</li>
+                        <li>#💼-careers-advice</li>
+                        <li>#☕-freelance-lounge</li>
+                        <li>##📃-job-postings</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <a class="logo" href="/">
+                <svg width="100%" height="100%" viewBox="0 0 205 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                    <g transform="matrix(1,0,0,1,-46.561,-188.439)">
+                        <g transform="matrix(1,0,0,1,322,74)">
+                            <g transform="matrix(1.46341,0,0,1.46341,-653.463,-130.087)">
+                                <g>
+                                    <g transform="matrix(0.683333,0,0,0.683333,225.817,38.3261)">
+                                        <path d="M139.435,285.024L54.498,285.024C50.669,285.024 47.561,281.916 47.561,278.088L47.561,195.376C47.561,191.547 50.669,188.439 54.498,188.439L245.502,188.439C249.331,188.439 252.439,191.547 252.439,195.376L252.439,278.088C252.439,281.916 249.331,285.024 245.502,285.024L160.565,285.024C160.508,285.093 160.448,285.159 160.384,285.222L152.033,293.573C150.911,294.696 149.089,294.696 147.967,293.573L139.616,285.222C139.552,285.159 139.492,285.093 139.435,285.024ZM158.204,214.748L158.242,214.645L141.327,214.645L133.687,242.233L133.251,242.233L124.193,214.645L110.879,214.645L101.821,242.146L101.384,242.146L93.745,214.645L76.829,214.645L93.308,259.345L107.823,259.345L117.317,234.376L117.754,234.376L127.248,259.345L141.763,259.345L149.789,237.575L157.852,259.449L172.367,259.449L181.861,234.479L182.298,234.479L191.792,259.449L206.307,259.449L222.786,214.748L205.871,214.748L198.231,242.337L197.795,242.337L188.737,214.748L175.423,214.748L166.365,242.249L165.928,242.249L158.289,214.748L158.204,214.748Z" style="fill:white;"/>
+                                    </g>
+                                    <g transform="matrix(52.5,0,0,42,321.527,215.616)">
+                                        <path d="M0.232,0L0.42,0L0.544,-0.406L0.55,-0.406L0.673,0L0.862,0L1.077,-0.727L0.857,-0.727L0.757,-0.278L0.751,-0.278L0.634,-0.727L0.46,-0.727L0.342,-0.28L0.337,-0.28L0.237,-0.727L0.127,-0.356L0.232,0Z" style="fill:white;fill-opacity:0.2;fill-rule:nonzero;"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+            <img src="assets/images/webwide-bg.svg" alt="Illustrated crowd of people with speech bubbles containing various tech-related icons">
+        </div>
+    </section>
+
+    <script> </script>
+</body>
+</html>

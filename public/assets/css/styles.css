@@ -1,0 +1,421 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root {
+  font-size: 18px;
+  --black: #0A0206;
+  --primary: #FF2F92;
+  --primary-dark: #de1e7a;
+}
+
+@media (max-width: 1300px) {
+  :root {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 900px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+body {
+  color: var(--black);
+  font-family: 'Inter', sans-serif;
+}
+
+section#hero {
+  display: flex;
+  min-height: 100vh;
+  min-width: 100%;
+  padding: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  section#hero {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+}
+
+section#hero > div {
+  min-width: 50%;
+  flex: 1 0;
+}
+
+@media (max-width: 1200px) {
+  section#hero > div.hero-image {
+    min-width: 40%;
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 900px) {
+  section#hero > div.hero-image {
+    min-width: 30%;
+    max-width: 30%;
+  }
+}
+
+@media (max-width: 700px) {
+  section#hero > div {
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+  section#hero > div.hero-image {
+    max-height: 25vh;
+    min-height: 150px;
+  }
+}
+
+section#hero .hero-image {
+  position: relative;
+  background: var(--primary);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+section#hero .hero-image .logo {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  section#hero .hero-image {
+    border-radius: 0;
+  }
+  section#hero .hero-image .logo {
+    position: absolute;
+    display: block;
+    z-index: 10;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    top: auto;
+  }
+  section#hero .hero-image .logo svg {
+    display: block;
+    height: 3rem;
+    width: auto;
+  }
+  section#hero .hero-image .logo svg path {
+    fill: #fff !important;
+  }
+}
+
+section#hero .hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left bottom;
+  mix-blend-mode: multiply;
+  opacity: 0.95;
+  transition: object-position 2s ease-out;
+}
+
+section#hero .hero-image img:hover {
+  object-position: right bottom;
+}
+
+@media (prefers-reduced-motion) {
+  section#hero .hero-image img {
+    transition: 0;
+  }
+  section#hero .hero-image img:hover {
+    object-position: left bottom;
+  }
+}
+
+section#hero .logo {
+  position: absolute;
+  height: 3rem;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  display: block;
+  transition: 300ms ease;
+}
+
+section#hero .logo:hover {
+  opacity: 1;
+}
+
+section#hero .logo svg {
+  height: 100%;
+  width: auto;
+}
+
+section#hero .logo svg path {
+  fill: var(--primary-dark) !important;
+}
+
+section#hero .hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  section#hero .hero-content {
+    display: block;
+  }
+  section#hero .hero-content .logo {
+    display: none;
+  }
+}
+
+section#hero .hero-content details {
+  font-size: 0.8rem;
+}
+
+section#hero .hero-content details summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+section#hero .hero-content details p {
+  margin: 0.4em 0;
+}
+
+section#hero .hero-content details p a {
+  color: var(--primary-dark);
+}
+
+section#hero .hero-content main {
+  max-width: 40rem;
+  margin-left: -1.5rem;
+  padding: 6rem 0;
+}
+
+@media (max-width: 700px) {
+  section#hero .hero-content main {
+    margin: 0;
+    padding: 0 0 1.5rem;
+  }
+}
+
+section#hero .hero-content h1 {
+  font-size: 3.4rem;
+  line-height: 1;
+  font-family: 'DM Serif Display', serif;
+}
+
+@media (max-width: 1300px) {
+  section#hero .hero-content h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 700px) {
+  section#hero .hero-content h1 {
+    font-size: 2rem;
+  }
+}
+
+section#hero .hero-content p.lead {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin: 0.7rem 0;
+}
+
+@media (max-width: 1300px) {
+  section#hero .hero-content p.lead {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 700px) {
+  section#hero .hero-content p.lead {
+    font-size: 1.1rem;
+  }
+}
+
+section#hero .hero-content p {
+  opacity: 0.8;
+}
+
+@media (max-width: 700px) {
+  section#hero .hero-content p {
+    font-size: 0.9rem;
+  }
+}
+
+section#hero .hero-content nav {
+  display: flex;
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 700px) {
+  section#hero .hero-content nav {
+    flex-direction: column;
+  }
+  section#hero .hero-content nav a:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+section#hero .hero-content nav a {
+  padding: 1rem 1.5rem;
+  display: block;
+  line-height: 1;
+  margin: 0 1rem 0 0;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 4px;
+  transition: 300ms ease;
+}
+
+section#hero .hero-content nav a:hover {
+  transform: translateY(-5px);
+}
+
+section#hero .hero-content nav a:first-child {
+  background: var(--primary-dark);
+  border: solid 5px var(--primary-dark);
+  color: white;
+}
+
+section#hero .hero-content nav a:last-child {
+  border: solid 5px #eee;
+  color: var(--black);
+}
+
+section#hero .hero-content #channel-scroller {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding-right: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  section#hero .hero-content #channel-scroller {
+    padding-right: 0;
+    position: relative;
+  }
+}
+
+section#hero .hero-content #channel-scroller h2 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+section#hero .hero-content #channel-scroller h2 span:last-child {
+  font-weight: normal;
+  opacity: 0.8;
+}
+
+section#hero .hero-content #channel-scroller h2 svg {
+  height: 1em;
+  width: auto;
+  vertical-align: middle;
+}
+
+section#hero .hero-content #channel-scroller #channel-scroller-wrap {
+  background: #eee;
+  padding: 0.5rem;
+  margin: 0.4rem 0 0;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  width: 100%;
+  overflow: hidden;
+}
+
+section#hero .hero-content #channel-scroller #channel-scroller-track {
+  pointer-events: none;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+  will-change: transform;
+  animation: marquee 30s linear infinite;
+}
+
+section#hero .hero-content #channel-scroller #channel-scroller-track li {
+  margin-right: 1rem;
+  white-space: nowrap;
+  opacity: 0.8;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
