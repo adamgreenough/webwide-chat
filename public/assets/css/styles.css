@@ -1,6 +1,5 @@
 :root {
   font-size: 18px;
-  text-rendering: geometricPrecision;
   --black: #0A0206;
   --primary: #ff2f79;
   --primary-dark: #dd1f63;
@@ -271,7 +270,7 @@ body.home section#hero .hero-content h1 {
   font-size: 3.5rem;
   line-height: 1;
   font-family: 'DM Serif Display', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 @media (max-width: 1300px) {
