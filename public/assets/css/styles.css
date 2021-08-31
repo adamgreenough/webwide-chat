@@ -1,6 +1,6 @@
 :root {
   font-size: 18px;
-  text-rendering: optimizeLegibility;
+  text-rendering: geometricPrecision;
   --black: #0A0206;
   --primary: #ff2f79;
   --primary-dark: #dd1f63;
