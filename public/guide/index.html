@@ -7,6 +7,7 @@
     <title>Webwide • Community Guide</title>
     <meta name="description" content="">
 
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
 
     <style>
@@ -18,7 +19,7 @@
             --nc-tx-1: #000000;
             --nc-tx-2: #1A1A1A;
             --nc-bg-1: #FFFFFF;
-            --nc-bg-2: #F6F8FA;
+            --nc-bg-2: #E6E6E6;
             --nc-bg-3: #E5E7EB;
             --nc-lk-1: #DB2273;
             --nc-lk-2: #0366D6;
@@ -32,7 +33,7 @@
             --nc-d-bg-1: #000000;
             --nc-d-bg-2: #111111;
             --nc-d-bg-3: #222222;
-            --nc-d-lk-1: #3291FF;
+            --nc-d-lk-1: #DB2273;
             --nc-d-lk-2: #0070F3;
             --nc-d-lk-tx: #FFFFFF;
             --nc-d-ac-1: #7928CA;
@@ -57,6 +58,32 @@
         a {
             text-decoration: none;
             font-weight: bold;
+        }
+
+        a.logo svg {
+            height: 3rem;
+            width: auto;
+            margin-bottom: 1rem;
+
+        }
+
+        a.logo svg path {
+            fill: var(--nc-lk-1);
+        }
+
+        h1, h2, h3 {
+            padding-bottom: 0.4em;
+            margin-bottom: 0.6em;
+        }
+
+        h3, h4, h5, h6 {
+            opacity: 0.8;
+        }
+
+        header {
+            background-image: url('../assets/images/guide-header.png');
+            background-size: cover;
+            background-position: center center;
         }
     </style>
 
@@ -92,7 +119,25 @@
 <body class="guide">
 <!-- Header -->
 <header>
-    <h1>Community Guide</h1>
+    <a class="logo" href="/">
+        <svg width="100%" height="100%" viewBox="0 0 205 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+            <g transform="matrix(1,0,0,1,-46.561,-188.439)">
+                <g transform="matrix(1,0,0,1,322,74)">
+                    <g transform="matrix(1.46341,0,0,1.46341,-653.463,-130.087)">
+                        <g>
+                            <g transform="matrix(0.683333,0,0,0.683333,225.817,38.3261)">
+                                <path d="M139.435,285.024L54.498,285.024C50.669,285.024 47.561,281.916 47.561,278.088L47.561,195.376C47.561,191.547 50.669,188.439 54.498,188.439L245.502,188.439C249.331,188.439 252.439,191.547 252.439,195.376L252.439,278.088C252.439,281.916 249.331,285.024 245.502,285.024L160.565,285.024C160.508,285.093 160.448,285.159 160.384,285.222L152.033,293.573C150.911,294.696 149.089,294.696 147.967,293.573L139.616,285.222C139.552,285.159 139.492,285.093 139.435,285.024ZM158.204,214.748L158.242,214.645L141.327,214.645L133.687,242.233L133.251,242.233L124.193,214.645L110.879,214.645L101.821,242.146L101.384,242.146L93.745,214.645L76.829,214.645L93.308,259.345L107.823,259.345L117.317,234.376L117.754,234.376L127.248,259.345L141.763,259.345L149.789,237.575L157.852,259.449L172.367,259.449L181.861,234.479L182.298,234.479L191.792,259.449L206.307,259.449L222.786,214.748L205.871,214.748L198.231,242.337L197.795,242.337L188.737,214.748L175.423,214.748L166.365,242.249L165.928,242.249L158.289,214.748L158.204,214.748Z" />
+                            </g>
+                            <g transform="matrix(52.5,0,0,42,321.527,215.616)">
+                                <path d="M0.232,0L0.42,0L0.544,-0.406L0.55,-0.406L0.673,0L0.862,0L1.077,-0.727L0.857,-0.727L0.757,-0.278L0.751,-0.278L0.634,-0.727L0.46,-0.727L0.342,-0.28L0.337,-0.28L0.237,-0.727L0.127,-0.356L0.232,0Z" style="fill-opacity:0.2;fill-rule:nonzero;"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+    </a>
+    <h1>Webwide Community Guide</h1>
     <p>Discover the Webwide web designer & developer Discord community.</p>
 </header><!-- ./ Header -->
 
@@ -113,18 +158,98 @@
 
     <section id="intro">
         <h2>👋 1. Introduction</h2>
+        <p>Webwide is an inclusive, supportive community of professional and hobbyist web designers & developers.</p>
+        <p>Whether you're in training, a seasoned pro or anything in between – join us in a variety of friendly chit-chat, knowledge-sharing and activities.</p>
+        <p>Webwide is a premium members-only community. A small monthly membership fee means the larger the community gets, the more resources there is to invest in moderation and keeping Webwide a safe, self-funded, democratic community. It also helps to cover platform fees and fund tree plantings.</p>
+        <p>Subscriptions are powered by Ko-Fi and can be easily cancelled from their account area at any time – no hard feelings! During checkout, you'll be invited to the Webwide Discord server where you can join with an existing account or easily create a new one.</p>
+        <p>If you can't pay for any reason – be it affordability, geo-restrictions, or anything else – please email me a quick intro at webwide@addy.codes for a free membership (no explanation required!).</p>
+        <p><a href="https://ko-fi.com/webwide/tiers" target="_blank"><button>Join Webwide for $3/m</button></a></p>
+        <h4>What happened to Webwide.io forums?</h4>
+        <p>You may remember us as the forum Webwide.io, the Webwide forums were sunset indefinitely in September 2021 in favour of this new Discord channel. Same founder (hello, it's Adam!), same spirit, more of the same fun challenges and activities and hopefully lots of the same great community members but in a sleeker and easier to use package.</p>
     </section>
 
     <section id="basics">
         <h2>💬 2. Discord Basics</h2>
+        <p>Discord is a popular instant messaging app, once targeted specifically towards gamers as a fast, lightweight, easy-to-use community platform, these key features have led to widespread adoption across a huge number of communities.</p>
+        <p>Discord is free to use and can be used in your browser or with a <a href="https://discord.com/download" target="_blank">native app</a> for Windows, Mac, Linux, Android or iOS.</p>
+        <p><a href="https://discord.com/download" target="_blank"><button>Download Discord</button></a></p>
+        <p>Discord has a wide variety of great features such as text formatting, commands, threads, user profiles, audio chat, video chat and more. Check out the <a href="https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord">Discord Beginners Guide</a> for more information.</p>
+        <p>When you subscribe to Webwide with Ko-Fi, you will be guided through the process of linking a new or existing Discord account with your subscription. You will automatically be assigned a role on the server that allows you to participate. You can cancel your subscription at any time, your Webwide access will simply be limited until you resubscribe.</p>
     </section>
 
     <section id="channels">
         <h2>📺 3. Channel Guide</h2>
+        <p>Webwide has a wide variety of discussion channels. The channels are fluid based on usage and we're still fine tuning to get the right balance between variety and succintness.</p>
+        <p>When the channel list is a bit more settled, we'll feature it here. In the meantime, clicking any channel in the Webwide Discord sidebar will show you the description for the channel in the top bar.</p>
     </section>
 
     <section id="commands">
         <h2>⌨️ 4. Chat Commands</h2>
+        <p>The Webwide Discord server features a growing number of handy and fun chat commands. Simply type the command in to any channel to activate it. Keywords in brackets are for you to replace with the relavant info.</p>
+        <table>
+            <caption>Chat Commands List</caption>
+            <thead>
+                <tr>
+                    <th style="width: 40% !important;">Command</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>/thread [title] [message]</code></td>
+                    <td>Start a new threaded discussion in a mini breakout sub-channel. Useful for active conversations that are dominating other topics in a channel.</td>
+                </tr>
+                <tr>
+                    <td><code>/remindme [time and reminder]</code></td>
+                    <td>A bot will parse natural language and DM you when your reminder rings. For example <code>/remindme tomorrow at 3pm to plant a tree</code> or <code>/remindme in 3 days to post project updates</code>.</td>
+                </tr>
+                <tr>
+                    <td><code>/poll create [question] [option 1] [option 2] [optional: option n...]</code></td>
+                    <td>Create a poll using reactions.</td>
+                </tr>
+                <tr>
+                    <td><code>/giphy [search]</code></td>
+                    <td>Search and embed animated GIFs from Giphy.</td>
+                </tr>
+                <tr>
+                    <td><code>/spoiler [content]</code></td>
+                    <td>Mark your text as a spoiler and require a click to view.</td>
+                </tr>
+                <tr>
+                    <td><code>/nick [nickname]</code></td>
+                    <td>Change your nickname on this server.</td>
+                </tr>
+                <tr>
+                    <td><code>/me [message]</code></td>
+                    <td>Display your message with emphasis.</td>
+                </tr>
+                <tr>
+                    <td><code>/rank [optional: username]</code></td>
+                    <td>Get your own or someone elses server rank which shows how active someone has been on the server. Will be used for rewards in future.</td>
+                </tr>
+                <tr>
+                    <td><code>/levels</code></td>
+                    <td>Get a link to the servers rank leaderboard.</td>
+                </tr>
+
+                <tr>
+                    <td><code>/remember-birthday [date: yyyy-mm-dd]</code></td>
+                    <td>Get the bot to remember your birthday and give you a birthday announcement when the special day comes! You can also use <code>/forget-birthday</code> to remove it.</td>
+                </tr>
+                <tr>
+                    <td><code>/flip</code></td>
+                    <td>Flip a coin.</td>
+                </tr>
+                <tr>
+                    <td><code>/github [repository]</code></td>
+                    <td>Get information on a GitHub repository.</td>
+                </tr>
+                <tr>
+                    <td><code>/color [hex code]</code></td>
+                    <td>Shows a preview of a given hex code as well as conversions.</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
     <section id="trees">
@@ -179,6 +304,7 @@
 
         <h3>6.4. Community Etiquette</h2>
         <ul>
+            <li>Please display your preferred pronouns either in your nickname or profile about section.</li>
             <li>Do not ‘cross-post’ the same discussion in to multiple channels, just pick the one you think fits best (there are no infractions for posting in an incorrect category).</li>
             <li>Be aware that everything posted on Webwide may be public and may be archived.</li>
             <li>Self-promotion is welcomed as per the above guidelines, but please make an effort to join in with our community and provide value to other members.
