@@ -290,18 +290,19 @@ section#hero {
             #channel-scroller-track {
                 pointer-events: none;
                 list-style: none;
-display: flex;
-            margin: 0;
-            padding: 0;
-
+                display: flex;
+                margin: 0;
+                padding: 0;
                 font-size: 0.8rem;
                 will-change: transform;
-                  animation: marquee 30s linear infinite;
+                animation: marquee 80s linear infinite;
+                width: fit-content;
 
                 li {
                     margin-right: 1rem;
                     white-space: nowrap;
                     opacity: 0.8;
+
                 }
             }
         }

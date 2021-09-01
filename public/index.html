@@ -67,7 +67,7 @@
                 <p>Whether you're in training, a seasoned pro or anything in between – join us in a variety of friendly chit-chat, knowledge-sharing and activities.</p>
                 <nav>
                     <a href="https://ko-fi.com/webwide/tiers" target="_blank">Join now for $3/m</a>
-                    <a href="/guide/" target="popup" onclick="window.open('https://webwide.chat/guide/','popup','width=500,height=600'); return false;">Community Guide</a>
+                    <a href="/guide/" target="popup" onclick="createPopupWin('https://webwide.chat/guide/','Webwide Community Guide', 650, 650); return false;">Community Guide</a>
                 </nav>
                 <details>
                     <summary>Membership info & free memberships</summary>
@@ -119,8 +119,43 @@
                         <li>#🙏-buddy-up</li>
                         <li>#💼-careers-advice</li>
                         <li>#☕-freelance-lounge</li>
-                        <li>##📃-job-postings</li>
-
+                        <li>#📃-job-postings</li>
+                        <li aria-hidden="true">#👋-introduce-yourself</li>
+                        <li aria-hidden="true">#🏆-community-challenges</li>
+                        <li aria-hidden="true">#🌲-plant-a-tree</li>
+                        <li aria-hidden="true">#💬-lounge</li>
+                        <li aria-hidden="true">#🗞-technology-news</li>
+                        <li aria-hidden="true">#🧠-mental-health</li>
+                        <li aria-hidden="true">#🥘-cooking-and-crafting</li>
+                        <li aria-hidden="true">#🕹-video-games</li>
+                        <li aria-hidden="true">#🐱-pets</li>
+                        <li aria-hidden="true">#📝-blog-posts</li>
+                        <li aria-hidden="true">#⭐-show-and-tell</li>
+                        <li aria-hidden="true">#🖌-design</li>
+                        <li aria-hidden="true">#🎨-creative-coding</li>
+                        <li aria-hidden="true">#✨-user-experience</li>
+                        <li aria-hidden="true">#🔥-design-critiques</li>
+                        <li aria-hidden="true">#📄-html</li>
+                        <li aria-hidden="true">#🌈-css</li>
+                        <li aria-hidden="true">#🟨-javascript</li>
+                        <li aria-hidden="true">#🛠-js-frameworks</li>
+                        <li aria-hidden="true">#🚹-accessibility</li>
+                        <li aria-hidden="true">#🖥-front-end-other</li>
+                        <li aria-hidden="true">#🐘-php</li>
+                        <li aria-hidden="true">#🐍-python</li>
+                        <li aria-hidden="true">#🟢-node</li>
+                        <li aria-hidden="true">#🖋-wordpress</li>
+                        <li aria-hidden="true">#📦-other-cms</li>
+                        <li aria-hidden="true">#🗃-databases</li>
+                        <li aria-hidden="true">#🛠-back-end-other</li>
+                        <li aria-hidden="true">#🌐-hosting-domains</li>
+                        <li aria-hidden="true">#📈-digital-marketing</li>
+                        <li aria-hidden="true">#💿-software</li>
+                        <li aria-hidden="true">#💻-hardware</li>
+                        <li aria-hidden="true">#🙏-buddy-up</li>
+                        <li aria-hidden="true">#💼-careers-advice</li>
+                        <li aria-hidden="true">#☕-freelance-lounge</li>
+                        <li aria-hidden="true">#📃-job-postings</li>
                     </ul>
                 </div>
             </div>
@@ -149,6 +184,17 @@
         </div>
     </section>
 
-    <script> </script>
+    <script>
+        function createPopupWin(pageURL, pageTitle,
+                    popupWinWidth, popupWinHeight) {
+            var left = (screen.width - popupWinWidth) / 2;
+            var top = (screen.height - popupWinHeight) / 4;
+
+            var myWindow = window.open(pageURL, pageTitle,
+                    'resizable=yes, width=' + popupWinWidth
+                    + ', height=' + popupWinHeight + ', top='
+                    + top + ', left=' + left);
+        }
+    </script>
 </body>
 </html>
