@@ -1,3 +1,8 @@
 body.guide {
-    @import 'mvp';
+    h1 {
+        font-family: 'DM Serif Display', sans-serif;
+        font-size: 3rem;
+        font-weight: 400;
+        letter-spacing: unset;
+    }
 }
