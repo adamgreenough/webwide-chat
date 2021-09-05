@@ -170,6 +170,36 @@ section#hero {
             }
         }
 
+        .members-count {
+            margin-bottom: 1rem;
+            line-height: 1;
+
+            .online {
+                width: 0.9rem;
+                height: 0.9rem;
+                border-radius: 50%;
+                background: #20C997;
+                display: inline-block;
+                margin-right: 0.3rem;
+                vertical-align: bottom;
+                position: relative;
+                margin-bottom: 0.1rem;
+
+
+                &:before {
+                    width: 0.9rem;
+                    height: 0.9rem;
+                    border-radius: 50%;
+                    background: #20C997;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    animation: pulse linear 2s infinite;
+                    content: '';
+                }
+            }
+        }
+
         h1 {
             font-size: 4rem;
             max-width: 35rem;
@@ -229,6 +259,10 @@ section#hero {
                 border-radius: 4px;
                 transition: 300ms ease;
 
+                span {
+                    opacity: 0.7;
+                }
+
                 &:hover {
                     transform: translateY(-5px);
                 }
@@ -244,6 +278,14 @@ section#hero {
                     color: var(--black);
                 }
             }
+        }
+
+        small {
+            font-size: 0.8rem;
+            line-height: 1.4;
+            opacity: 0.7;
+            display: block;
+            margin-bottom: 1rem;
         }
 
         #channel-scroller {
@@ -290,19 +332,19 @@ section#hero {
             #channel-scroller-track {
                 pointer-events: none;
                 list-style: none;
-                display: flex;
                 margin: 0;
                 padding: 0;
                 font-size: 0.8rem;
                 will-change: transform;
                 animation: marquee 80s linear infinite;
                 width: fit-content;
+                white-space: nowrap;
 
                 li {
                     margin-right: 1rem;
                     white-space: nowrap;
                     opacity: 0.8;
-
+                    display: inline;
                 }
             }
         }
@@ -314,3 +356,20 @@ section#hero {
       from { transform: translateX(0); }
       to { transform: translateX(-50%); }
     }
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.4);
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}

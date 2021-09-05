@@ -267,6 +267,35 @@ body.home section#hero .hero-content main {
   }
 }
 
+body.home section#hero .hero-content .members-count {
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+body.home section#hero .hero-content .members-count .online {
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  background: #20C997;
+  display: inline-block;
+  margin-right: 0.3rem;
+  vertical-align: bottom;
+  position: relative;
+  margin-bottom: 0.1rem;
+}
+
+body.home section#hero .hero-content .members-count .online:before {
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  background: #20C997;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: pulse linear 2s infinite;
+  content: '';
+}
+
 body.home section#hero .hero-content h1 {
   font-size: 4rem;
   max-width: 35rem;
@@ -340,6 +369,10 @@ body.home section#hero .hero-content nav a {
   transition: 300ms ease;
 }
 
+body.home section#hero .hero-content nav a span {
+  opacity: 0.7;
+}
+
 body.home section#hero .hero-content nav a:hover {
   transform: translateY(-5px);
 }
@@ -353,6 +386,14 @@ body.home section#hero .hero-content nav a:first-child {
 body.home section#hero .hero-content nav a:last-child {
   border: solid 5px #eee;
   color: var(--black);
+}
+
+body.home section#hero .hero-content small {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  opacity: 0.7;
+  display: block;
+  margin-bottom: 1rem;
 }
 
 body.home section#hero .hero-content #channel-scroller {
@@ -400,19 +441,20 @@ body.home section#hero .hero-content #channel-scroller #channel-scroller-wrap {
 body.home section#hero .hero-content #channel-scroller #channel-scroller-track {
   pointer-events: none;
   list-style: none;
-  display: flex;
   margin: 0;
   padding: 0;
   font-size: 0.8rem;
   will-change: transform;
   animation: marquee 80s linear infinite;
   width: fit-content;
+  white-space: nowrap;
 }
 
 body.home section#hero .hero-content #channel-scroller #channel-scroller-track li {
   margin-right: 1rem;
   white-space: nowrap;
   opacity: 0.8;
+  display: inline;
 }
 
 @keyframes marquee {
@@ -421,6 +463,21 @@ body.home section#hero .hero-content #channel-scroller #channel-scroller-track l
   }
   to {
     transform: translateX(-50%);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
   }
 }
 
